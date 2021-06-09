@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  /* background-image: url("./yOdkL4G.png"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 500;
+  text-align: left;
+  color: white;
+}
+
+.person h3 {
+  display: inline;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Top-level components */
+
+.container {
+  width: 395px;
+  height: 600px;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1px 0 0 1px;
+  border-color: #555;
+  box-shadow: 7px 7px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.persons-list {
+  background-color: #1c1c1c;
+  height: 523px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.person {
+  padding: 21.5px;
+}
+
+.sort-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* FA icons */
+
+.fa-square-full {
+  font-size: 1.25rem;
+  padding: 0 20px 0 18px;
+  color: #fff;
+}
+
+.fa-chevron-circle-up {
+  font-size: 1rem;
+  color: #fff;
+  padding: 5px 0 2px 5px;
+}
+
+.fa-chevron-circle-down {
+  font-size: 1rem;
+  color: #fff;
+  padding: 5px 0 5px 5px;
+}
+
+.sort-order-active {
+  color: yellowgreen;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1c1c1c;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+.navbar .search-container form {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: #555;
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-item a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbar .active {
+  background-color: #04aa6d;
+}
+
+.search-container {
+  display: flex;
+  width: 57%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1c1c1c;
+}
+
+.search-container input[type="text"] {
+  background-color: #212121;
+  /* box-shadow: inset 8px 8px 15px 5px #000000; */
+  box-shadow: inset 0 12px 5px -3px rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 6px 5px 7px;
+  width: 83%;
+  font-size: 1.25rem;
+  border: none;
+}
+
+.search-container button {
+  z-index: 2;
+  box-shadow: inset 8px 12px 5px -3px rgba(0,0,0,0.7);
+  padding: 9px;
+  height: 100%;
+  color: white;
+  background-color: #212121;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.shadow-crop {
+  overflow: hidden;
+}
+
+.search-container button:hover {
+  background: #555;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track-piece {
+  background: #1c1c1c !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
